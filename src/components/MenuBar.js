@@ -1,16 +1,17 @@
 import React, { Component } from 'react'; 
+import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 class MenuBar extends Component { 
   render() {
     return (
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Archive</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+      <Navbar collapseOnSelect>
+        <Nav>
+          <NavItem>Home</NavItem>
+          <NavItem>About</NavItem>
+          <NavItem>Archive</NavItem>
+          <NavItem>Contact</NavItem>
+        </Nav>
+      </Navbar>
     )
   }
 }
