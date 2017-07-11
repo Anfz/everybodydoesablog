@@ -4,7 +4,7 @@ import { Jumbotron} from 'react-bootstrap';
 class Title extends Component {
   render() {
     return (
-      <Jumbotron>
+      <Jumbotron className="jumbotron">
         <h1>Chris's Blog</h1>
         <h4>One does wonder if it's real</h4>
       </Jumbotron>

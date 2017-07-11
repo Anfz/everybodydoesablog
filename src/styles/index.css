@@ -1,0 +1,22 @@
+body {
+  text-align: center; 
+  padding: 5%;
+  background-color: #28294F;
+  color: #28294F;
+}
+
+.jumbotron {
+  border: 5px solid #262747; 
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #E8E8EE;
+
+}
+
+.blog-item {
+  border: 5px solid #262747; 
+  border-radius: 10px;
+  margin: 25px;
+  background-color: #E8E8EE;
+}
+

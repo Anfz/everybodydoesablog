@@ -4,6 +4,37 @@
     "userId": 0,
     "title": "I dream of a blog",
     "text" : "yeah what he said"
+  },
+  {
+    "postId": 1, 
+    "userId": 0,
+    "title": "I dream of a blog",
+    "text" : "yeah what he said"
+  },
+  {
+    "postId": 2, 
+    "userId": 0,
+    "title": "I had a dream of a blog",
+    "text" : "yeah what he said"
+  },
+  {
+    "postId": 3, 
+    "userId": 1,
+    "title": "I had a dream of a blog",
+    "text" : "yeah what he said"
+  },
+  {
+    "postId": 4, 
+    "userId": 1,
+    "title": "I had a dream of a blog",
+    "text" : "yeah what he said"
+  },
+  {
+    "postId": 5, 
+    "userId": 1,
+    "title": "I had a dream of a blog",
+    "text" : "yeah what he said"
   }
+
 
 ]
