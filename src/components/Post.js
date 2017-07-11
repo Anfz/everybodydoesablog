@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 
 
-class BlogItem extends Component {
+class Post extends Component {
   render(){
     let {post} = this.props; 
 
@@ -16,4 +16,4 @@ class BlogItem extends Component {
   }
 }
 
-export default BlogItem; 
+export default Post; 

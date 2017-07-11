@@ -1,9 +1,9 @@
 import React, { Component } from 'react'; 
 import { connect } from 'react-redux'; 
 
-import BlogItem from './BlogItem'; 
+import Post from './Post'; 
 
-class BlogItemList extends Component {
+class Posts extends Component {
   render() { 
 
     return (
@@ -11,7 +11,7 @@ class BlogItemList extends Component {
         {
           this.props.posts.map(post => 
           {
-            return <BlogItem key={post.postId} post={post} />;
+            return <Post key={post.postId} post={post} />;
           })
         }
       </div>
@@ -25,4 +25,4 @@ function mapStateToProps(state){
   }
 }
 
-export default connect(mapStateToProps, null)(BlogItemList);
+export default connect(mapStateToProps, null)(Posts);

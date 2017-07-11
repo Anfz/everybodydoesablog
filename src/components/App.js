@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 
 import Title from './Title';
-import BlogItemList from './BlogItemList';
+import Posts from './Posts';
 import MenuBar from './MenuBar';
 
 import '../styles/index.css';
@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <MenuBar />
         <Title /> 
-        <BlogItemList />
+        <Posts />
       </div>
     )
   }
