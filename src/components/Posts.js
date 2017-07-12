@@ -5,11 +5,11 @@ import Post from './Post';
 
 class Posts extends Component {
   render() { 
-
+    let {user,posts} = this.props; 
     return (
       <div>
         {
-          this.props.posts.map(post => 
+          posts.filter( post => post.userId == user.id).map(post => 
           {
             return <Post key={post.postId} post={post} />;
           })
@@ -21,7 +21,8 @@ class Posts extends Component {
 
 function mapStateToProps(state){
   return {
-    posts: state.posts
+    posts: state.posts, 
+    user: state.user
   }
 }
 
