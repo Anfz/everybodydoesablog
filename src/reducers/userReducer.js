@@ -1,10 +1,13 @@
-import user_json from '../data/users.json';
-
-
+import {GET_USER} from '../actions';
 
 function user(state = {}, action){
-  //got nothing to do anyway :D 
-  return user_json.filter(user => user.id === 0)[0];
+  console.log('user is called', action);
+  switch(action.type){
+    case GET_USER: 
+      return action.user; 
+    default: 
+      return state; 
+  }
   //return state; 
 }
 

@@ -11,7 +11,6 @@ class App extends Component {
       <div>
         <MenuBar />
         <Title /> 
-        <Posts />
       </div>
     )
   }

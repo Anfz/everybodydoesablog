@@ -6,7 +6,7 @@ import { Jumbotron} from 'react-bootstrap';
 class Title extends Component {
   render() {
     let {user} = this.props; 
-    console.log(user);
+    console.log('user', user);
     return (
       <Jumbotron className="jumbotron">
         <h1>{user.blogTitle}</h1>
