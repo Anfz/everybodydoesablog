@@ -2,26 +2,44 @@ export const ADD_BLOG_POST = 'ADD_BLOG_POST';
 export const CHANGE_USER = 'CHANGE_USER';  
 
 export const GET_USER = 'GET_USER';
+export const GET_BLOG = 'GET_BLOG';
 
 
 function receiveUser(json){
-  console.log('receiveUserIsCalled');
   return {
-    type:GET_USER, 
-    user:json
+    type: GET_USER, 
+    user: json
   }
 }
 
-function getUserJson(){
-  console.log('getUserJson is called');
-  return fetch('http://localhost:51272/api/Users/053a1d27-6480-4c8f-6ca6-08d4cb6d50fc')
+function getUserJson(user){
+  return fetch('http://localhost:51272/api/Users/' + user)
   .then(response => response.json())
 }
 
-export function getUser() {
-  console.log('getUserIsCalled');
+export function getUser(user) {
   return function(dispatch){
-    return getUserJson()
+    return getUserJson(user)
     .then(json => dispatch(receiveUser(json)));
+  }
+}
+
+
+function receiveBlogs(json){
+  return {
+    type: GET_BLOG, 
+    blog: json
+  }
+}
+
+function getBlogsJson(user){
+    return fetch('http://localhost:51272/api/Users/'+user+'/Blogs')
+  .then(response => response.json())
+}
+
+export function getBlogs(user) {
+  return function(dispatch){
+    return getBlogsJson(user)
+    .then(json => dispatch(receiveBlogs(json)));
   }
 }

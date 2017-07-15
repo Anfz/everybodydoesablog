@@ -1,7 +1,6 @@
 import {GET_USER} from '../actions';
 
 function user(state = {}, action){
-  console.log('user is called', action);
   switch(action.type){
     case GET_USER: 
       return action.user; 
