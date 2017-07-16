@@ -2,7 +2,7 @@ export const ADD_BLOG_POST = 'ADD_BLOG_POST';
 export const CHANGE_USER = 'CHANGE_USER';  
 
 export const GET_USER = 'GET_USER';
-export const GET_BLOG = 'GET_BLOG';
+export const GET_BLOGS = 'GET_BLOGS';
 
 
 function receiveUser(json){
@@ -27,8 +27,8 @@ export function getUser(user) {
 
 function receiveBlogs(json){
   return {
-    type: GET_BLOG, 
-    blog: json
+    type: GET_BLOGS, 
+    blogs: json
   }
 }
 

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Title from './Title';
 import Posts from './Posts';
 import MenuBar from './MenuBar';
+import Blogs from './Blogs';
 
 import '../styles/index.css';
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
         <MenuBar />
         <Title /> 
+        <Blogs />
       </div>
     )
   }

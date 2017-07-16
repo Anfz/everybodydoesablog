@@ -1,15 +1,14 @@
-import {GET_BLOG} from '../actions';
+import {GET_BLOGS} from '../actions';
 
-function blog(state = [], action){
+function blogs(state = [], action){
   console.log('action', action);
   switch(action.type){
-    case GET_BLOG: 
-      
-      return action.blog; 
+    case GET_BLOGS: 
+      return action.blogs; 
     default: 
       return state; 
   }
   //return state; 
 }
 
-export default blog;
+export default blogs;
