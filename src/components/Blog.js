@@ -4,11 +4,12 @@ import { Col } from 'react-bootstrap';
 class Blog extends Component {
   render(){
     let {blog} = this.props; 
-    console.log('blogss', blog);
     return (
-      <Col className="blog" md={3}>
+      <Col className="blog-col" md={3}>
+        <div className="blog-item">
         <h3>{blog.title}</h3>
         <h4>{blog.summary}</h4>
+        </div>
       </Col>
     )
   }
